@@ -1,0 +1,8 @@
+{
+    "name": "ui5.walkthrough",
+    "version":"1.0.0",
+    "description": "The UI% walkthrough application",
+    "scripts":{
+        "start":"ui5 serve -0 index.html"
+    }
+}
