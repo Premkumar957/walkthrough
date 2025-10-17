@@ -5,5 +5,5 @@ sap.ui.define([
 
 	new Text({
 		text: "Hello World"
-	}).placeAt("content");
+	}).placeAt("content"); 
 });
