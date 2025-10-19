@@ -1,18 +1,11 @@
 sap.ui.define([
-	"sap/m/Text",
-	"sap/m/Button",
-	"sap/m/MessageToast"
-], (Text, Button, MessageToast) => {
+	"sap/ui/core/mvc/XMLView"
+], (XMLView)=> {
 	"use strict";
 
-	new Text({
-		text: "Become the programmer you are meant to be!"
-	}).placeAt("content"); 
-	new Button({
-		text: "Press me",
-		type: "Default",
-		press: function() {
-			MessageToast.show("Button Cliked");
-		}
-	}).placeAt("content");
+	XMLView.create({
+		viewName: "ui5.walkthrough.view.App"
+	}).then(function(oView) { 
+		oView.placeAt("content");
+	});
 });
