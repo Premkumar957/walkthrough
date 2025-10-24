@@ -1,0 +1,1 @@
+SAPUI5 → CAP (CDS + Service + Logic) → HANA DB → Security (XSUAA) → BTP Deployment.
