@@ -1,0 +1,19 @@
+<mvc:View
+    controllerName="ui5.walkthrough.controller.Overview"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true">
+    <Page title="{i18n>homePageTitle}">
+        <content>
+            <mvc:XMLView viewName="ui5.walkthrough.view.HelloPanel"/>
+			<mvc:XMLView viewName="ui5.walkthrough.view.InvoiceList"/>
+            <VBox
+                justifyContent="Center"
+                alignItems="Center"
+                fitContainer="false">
+                <Button text="Open M Table" press=".onOpenTable" />
+                <Button text="Open ComboBox" type="Accept" press=".onOpenComboBox" />
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>

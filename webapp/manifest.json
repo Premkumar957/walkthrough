@@ -40,6 +40,14 @@
 			"invoice": {
 				"type": "sap.ui.model.json.JSONModel",
 				"uri": "Invoices.json"
+			},
+			"product": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "Products.json"
+			},
+			"country": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "Countries.json"
 			}
 		},
 		"rootView": {
@@ -53,6 +61,56 @@
 					"uri": "css/style.css"
 				}
 			]
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"type": "View",
+				"viewType": "XML",
+				"path": "ui5.walkthrough.view",
+				"controlId": "app",
+				"controlAggregation": "pages"
+			},
+			"routes": [
+				{
+					"pattern": "",
+					"name": "overview",
+					"target": "overview"
+				},
+				{
+					"pattern": "detail/{invoicePath}",
+					"name": "detail",
+					"target": "detail"
+				}, 
+				{
+					"pattern": "table",
+					"name": "table",
+					"target": "table"
+				},
+				{
+					"pattern": "combo-box",
+					"name": "comboBox",
+					"target": "comboBox"
+				}
+			],
+			"targets": {
+				"overview": {
+					"id": "overview",
+					"name": "Overview"
+				},
+				"detail": {
+					"id": "detail",
+					"name": "Detail"
+				},
+				"table": {
+					"id": "table",
+					"name": "Table"
+				},
+				"comboBox": {
+					"id": "comboBox",
+					"name": "ComboBox"
+				}
+			}
 		}
 	}
 }

@@ -1,0 +1,19 @@
+{
+  "CountriesCollection": [
+    { "key": "IN", "name": "India" },
+    { "key": "UN", "name": "United States" },
+    { "key": "UN", "name": "United Kingdom" },
+    { "key": "CA", "name": "Canada" },
+    { "key": "AU", "name": "Australia" },
+    { "key": "GE", "name": "Germany" },
+    { "key": "FR", "name": "France" },
+    { "key": "IT", "name": "Italy" },
+    { "key": "JA", "name": "Japan" },
+    { "key": "CH", "name": "China" },
+    { "key": "SI", "name": "Singapore" },
+    { "key": "UN", "name": "United Arab Emirates" },
+    { "key": "BR", "name": "Brazil" },
+    { "key": "SO", "name": "South Africa" },
+    { "key": "RU", "name": "Russia" }
+  ]
+}

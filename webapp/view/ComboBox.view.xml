@@ -1,0 +1,18 @@
+<mvc:View
+    height="100%"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core">
+    <Page showHeader="false" class="sapUiContentPadding">
+        <content>
+            <ComboBox
+                showSecondaryValues="true"
+                items="{
+                    path: 'country>/CountriesCollection',
+                    sorter: {path: 'name'}
+                }">
+                <core:ListItem key="{country>key}" text="{country>name}" additionalText="{country>key}" />
+            </ComboBox>
+        </content>
+    </Page>
+</mvc:View>

@@ -1,0 +1,60 @@
+{
+  "Products": [
+    {
+      "Product": "10\" Portable DVD player",
+      "Supplier": "HT-2001",
+      "Dimensions": "24 x 19.5 x 29 cm",
+      "Weight": "0.84 KG",
+      "Price": "449.99 EUR"
+    },
+    {
+      "Product": "7\" Widescreen Portable DVD Player w MP3",
+      "Supplier": "HT-2000",
+      "Dimensions": "21.4 x 19 x 27.6 cm",
+      "Weight": "0.79 KG",
+      "Price": "249.99 EUR"
+    },
+    {
+      "Product": "Astro Laptop 1516",
+      "Supplier": "HT-1251",
+      "Dimensions": "30 x 18 x 3 cm",
+      "Weight": "4.2 KG",
+      "Price": "989.00 EUR"
+    },
+    {
+      "Product": "Astro Phone 6",
+      "Supplier": "HT-1252",
+      "Dimensions": "8 x 6 x 1.5 cm",
+      "Weight": "0.75 KG",
+      "Price": "649.00 EUR"
+    },
+    {
+      "Product": "Audio/Video Cable Kit - 4m",
+      "Supplier": "HT-2026",
+      "Dimensions": "21 x 10.2 x 13 cm",
+      "Weight": "0.2 KG",
+      "Price": "29.99 EUR"
+    },
+    {
+      "Product": "Beam Breaker B-1",
+      "Supplier": "HT-6100",
+      "Dimensions": "30.4 x 23.1 x 23 cm",
+      "Weight": "1.7 KG",
+      "Price": "469.00 EUR"
+    },
+    {
+      "Product": "Beam Breaker B-2",
+      "Supplier": "HT-6101",
+      "Dimensions": "30.4 x 23.1 x 23 cm",
+      "Weight": "2 KG",
+      "Price": "679.00 EUR"
+    },
+    {
+      "Product": "Beam Breaker B-3",
+      "Supplier": "HT-6102",
+      "Dimensions": "30.4 x 23.1 x 23 cm",
+      "Weight": "2.5 KG",
+      "Price": "889.00 EUR"
+    }
+  ]
+}

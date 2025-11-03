@@ -2,3 +2,7 @@
    display: inline-block !important;
    vertical-align: middle;
 }
+
+.myAppDemoWT.myCenterButton {
+   padding-right: 50%;
+}

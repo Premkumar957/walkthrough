@@ -184,3 +184,8 @@ MySQL or PostgreSQL
 Postman (API testing)
 
 Docker (optional but powerful)
+
+Good Morning Team, go through about what we reviewed last Friday.
+Make sure the reference has to be taken from demo kit,
+and don't erase old codes, maintain one project and use different controllers and
+ xml as per the need .
