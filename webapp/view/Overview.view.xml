@@ -13,6 +13,8 @@
                 fitContainer="false">
                 <Button text="Open M Table" press=".onOpenTable" />
                 <Button text="Open ComboBox" type="Accept" press=".onOpenComboBox" />
+                <Button text="Open Sample" type="Warning" press=".onOpenSample" />
+                <Button text="Open Date and Time" type="Success" press=".onOpenDateAndTime" />
             </VBox>
         </content>
     </Page>

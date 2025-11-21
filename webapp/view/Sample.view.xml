@@ -1,0 +1,37 @@
+<mvc:View
+    controllerName="ui5.walkthrough.controller.Sample"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc">
+    <Page
+        title="Samples"
+        showNavButton="true"
+        navButtonPress=".onNavBack">
+        <content>   
+            <!--Checkbox-->
+            <VBox>
+                <Text text="CheckBoxes" class="sapUiSmallMarginTop" />
+                <FormattedText htmlText="What kind of UI element should we start with?" class="sapUiSmallMarginTop sapUiSmallMarginEnd" />
+                <CheckBox text="A simple form with inputs and a submit button" selected="{checkModel>/checkBox/option1}"  select="onRequirementSelect" />
+                <CheckBox text="A ComboBox with country list (from a JSON model)" selected="{checkModel>/checkBox/option2}" select="onRequirementSelect" />
+                <CheckBox text="A Table bound to model dat" selected="{checkModel>/checkBox/option3}"  select="onRequirementSelect" />
+                <CheckBox text="A FilterBar and DynamicPageLayout combo" selected="{checkModel>/checkBox/option4}"  select="onRequirementSelect" />
+            </VBox>
+
+            <!--Radio Box-->
+            <VBox>
+                <FormattedText htmlText="RadioBoxes"/>
+                <Label text="Enter a Gender" labelFor="GroupA"/>
+               <RadioButtonGroup
+                    id="GroupA"
+                    select="onSelectRadio"
+                    valueState="Success"
+                    selectedKey="{checkModel>/selectedGender}">
+                    <RadioButton text="Male" key="M"/>
+                    <RadioButton text="Female" key="F"/>
+                    <RadioButton text="Transgender" key="T"/>
+                </RadioButtonGroup>
+
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>

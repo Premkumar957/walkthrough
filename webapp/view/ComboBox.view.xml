@@ -1,18 +1,66 @@
 <mvc:View
-    height="100%"
+    controllerName="ui5.walkthrough.controller.ComboBox"
     xmlns="sap.m"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns:core="sap.ui.core">
-    <Page showHeader="false" class="sapUiContentPadding">
+    <Page
+        title="ComboBox Example"
+        class="sapUiContentPadding"
+        showNavButton="true"
+        navButtonPress=".onNavBack">
         <content>
+            <!--ComboBox -->
             <ComboBox
                 showSecondaryValues="true"
                 items="{
                     path: 'country>/CountriesCollection',
                     sorter: {path: 'name'}
-                }">
+                }"
+                placeholder="Select a Country"
+                selectedKey="{viewModel>/comboBoxKey}"
+                selectionChange=".onSelectionChange">
                 <core:ListItem key="{country>key}" text="{country>name}" additionalText="{country>key}" />
             </ComboBox>
+            <FormattedText
+                htmlText="Selected Country Key: {viewModel>/comboBoxKey}"
+                class="sapUiSmallMarginTop"/>
+
+            <!-- Input Capturing after clicking enter-->
+            <Input 
+                placeholder="Enter your name"
+                width="30%"
+                class="sapUiSmallMarginTop"
+                value="{viewModel>/name}"
+                change=".onChangeInput"/>
+            <FormattedText 
+                htmlText="Your Name: {viewModel>/name}"
+                class="sapUiSmallMarginTop"
+                style="font-size:30px; font-weight:bold;" />
+
+
+            <!--Select element selected key store using JSONModel-->
+            <Select
+                items="{
+                    path: 'country>/CountriesCollection'
+                }"
+                selectedKey="{viewModel>/selectKey}"
+                change=".onSelectChange">
+                <core:Item key="{country>key}" text="{country>name}" />
+            </Select>
+
+            <!--Multi ComboBox-->
+            <VBox>
+                <MultiComboBox
+                    items="{
+                        path: 'country>/CountriesCollection',
+                        sorter: {
+                            path: 'name'
+                        }
+                    }"
+                    maxWidth="400px">
+                    <core:Item key="{country>key}" text="{country>name}" />
+                </MultiComboBox>
+            </VBox>
         </content>
     </Page>
 </mvc:View>

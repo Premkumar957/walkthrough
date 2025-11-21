@@ -1,0 +1,80 @@
+<mvc:View
+    controllerName="ui5.walkthrough.controller.DateAndTime"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc">
+    <Page
+        title="Date and Time"
+        showNavButton="true"
+        navButtonPress=".onNavBack">
+        <content>
+            <Panel
+                width="auto"
+                headerText="Date Picker">
+                <!--Simple Date Picker-->
+                <Label text="simple Date Picker" labelFor="DP1" />
+                <DatePicker
+                    id="DP1"
+                    placeholder="Enter Date"
+                    value="{oModel>/valueDP1}"
+                    class="sapUiSmallMarginBottom"
+                    change="handleChange"/>
+                <!--Date picker with OK button-->
+                <Label text="Date picker with OK Button" labelFor="DP2"/>
+                <DatePicker
+                    id="DP2"
+                    placeholder="Enter Date"
+                    showFooter="true"
+                    value="{oModel>/valueDP2}"
+                    class="sapUiSmallMarginBottom"
+                    change="handleChange"/>
+                <!--DatePicker with Format-->
+                <Label text="Date picker with Format Mode" labelFor="DP3" />
+                <DatePicker
+                    id="DP3"
+                    placeholder="Enter Date"
+                    showFooter="true"
+                    value="{
+                        'path': 'oModel>/valueDP3',
+                        'type': 'sap.ui.model.type.Date',
+                        'formatOptions': {
+                            'pattern': 'yyyy-MM-dd'
+                        }
+                    }"
+                    class="sapUiSmallMarginBottom"
+                    change="handleChange"/>
+            </Panel>
+            <Panel headerText="Date Range Selection">
+                <Label text="DateRangeSelection display format 'yyyy-MM-dd', set via Binding" labelFor="DRS1" />
+                <DateRangeSelection 
+                    id="DRS1"
+                    value="{
+                        'type': 'sap.ui.model.type.DateInterval',
+                        'formatOptions': {
+                            'pattern': 'yyyy/MM/dd'
+                        },
+                        'parts': [
+                            {
+                                'type': 'sap.ui.model.Date',
+                                'path': 'oModel>/start'
+                            },
+                            {
+                                'type': 'sap.ui.model.Date',
+                                'path': 'oModel>/end'
+                            }
+                        ]
+                    }"
+                    change="handleDateRangeChange"/>
+            </Panel>
+            <Panel headerText="Time Picker">
+                <Label text="HH:mm" labelFor="TP1" />
+                <TimePicker
+                    id="TP1"
+                    value="{oModel>/TP1/value}"
+                    valueFormat="{oModel>/TP1/format}"
+                    displayFormat="{oModel>/TP1/format}"
+                    placeholder="Enter meeting start time"
+                    change="handleTimePickerChange"/>
+            </Panel>
+        </content>
+    </Page>
+</mvc:View>

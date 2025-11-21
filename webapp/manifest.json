@@ -91,6 +91,16 @@
 					"pattern": "combo-box",
 					"name": "comboBox",
 					"target": "comboBox"
+				},
+				{
+					"pattern": "sample",
+					"name": "sample",
+					"target": "sample"
+				},
+				{
+					"pattern": "date-and-time",
+					"name":"dateAndTime",
+					"target": "dateAndTime"
 				}
 			],
 			"targets": {
@@ -109,6 +119,14 @@
 				"comboBox": {
 					"id": "comboBox",
 					"name": "ComboBox"
+				},
+				"sample": {
+					"id": "sample",
+					"name": "Sample"
+				},
+				"dateAndTime": {
+					"id": "dateAndTime",
+					"name": "DateAndTime"
 				}
 			}
 		}

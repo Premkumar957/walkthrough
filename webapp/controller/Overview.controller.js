@@ -13,6 +13,16 @@ sap.ui.define([
             const oRouter = this.getOwnerComponent().getRouter();
             oRouter.navTo("comboBox");
             console.log("Navigating to ComboBox view");
+        },
+        onOpenSample() {
+            const oRouter = this.getOwnerComponent().getRouter();
+            oRouter.navTo("sample");
+            console.log("Navigationg to Sample")
+        },
+        onOpenDateAndTime() {
+            const oRouter = this.getOwnerComponent().getRouter();
+            oRouter.navTo("dateAndTime");
+            console.log("Navigating to DateAndTime");
         }
     })
 })

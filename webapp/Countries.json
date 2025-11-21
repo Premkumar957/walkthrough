@@ -1,8 +1,8 @@
 {
   "CountriesCollection": [
     { "key": "IN", "name": "India" },
-    { "key": "UN", "name": "United States" },
-    { "key": "UN", "name": "United Kingdom" },
+    { "key": "US", "name": "United States" },
+    { "key": "UK", "name": "United Kingdom" },
     { "key": "CA", "name": "Canada" },
     { "key": "AU", "name": "Australia" },
     { "key": "GE", "name": "Germany" },
